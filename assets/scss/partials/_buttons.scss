@@ -1,9 +1,10 @@
 // Buttons partial
+$button-radius: 3px;
 
 .btn {
 	font-size: 13px;
 	border: solid 2px;
-	border-radius: 40px;
+	border-radius: $button-radius;
 	display: inline-block;
 	text-transform: uppercase;
 }
@@ -15,7 +16,7 @@
 .btn-white {
 	font-size: 13px;
 	border: solid 2px;
-	border-radius: 40px;
+	border-radius: $button-radius;
 	display: inline-block;
 	border-color: $txt-light;
 }
@@ -26,15 +27,15 @@
 .btn-fill {
 	color: $white-color;
 	border: solid 2px $accent-color;
-	border-radius: 40px;
+	border-radius: $button-radius;
 	display: inline-block;
 	text-transform: uppercase;
 	background-color: $accent-color;
 }
 .btn-fill:hover, .btn-fill:focus {
-	color: $white-color;
-	background-color: $accent-color-hover;
-	border-color: $accent-color-hover;
+	color: $c-blue;
+	background-color: white;
+	border-color: white;
 }
 .btn-small {
 	padding: 8px 40px;

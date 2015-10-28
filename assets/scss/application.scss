@@ -4,6 +4,7 @@
 @import url(http://fonts.googleapis.com/css?family=Nunito:400,300,700);
 // Imports
 @import "bourbon/bourbon";
+@import "partials/mixins";
 @import "partials/colors";
 @import "partials/typography";
 @import "partials/buttons";
@@ -243,28 +244,29 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../images/hero.jpg') center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: $c-blue url('../images/hero.jpg') bottom center no-repeat;
   position: relative;
 
   .down-arrow a {
     color: $txt-light;
   }
   h1 {
-    color: $txt-light;
-    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    svg {
+      @include size(340px 47px);
+      * { fill: white; }
+    }
   }
   p.intro {
     color: $txt-light;
     font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 80px;
+    font-weight: $light;
+    margin-bottom: 30px;
   }
   .hero-content {
-    padding-top: 26%;
+    padding-top: 160px;
   }
 }
 .navigation {
@@ -289,6 +291,7 @@ header {
 
   a {
     color: $txt-light;
+    font-weight: $semibold;
     text-transform: uppercase;
     font-size: $nav-font-size;
 
@@ -298,9 +301,18 @@ header {
   }
   .logo {
     display: inline-block;
+    a { display: block; }
+    svg {
+      @include size(160px 21px);
+      * { 
+        fill: white;
+        &.logo-number { fill: $c-teal !important; }
+      }
+    }
+      
   }
   ul.primary-nav {
-    margin: 0 0 0 75px;
+    margin: 10px 0 0 75px;
     padding: 0;
 
     li {
@@ -334,6 +346,7 @@ header {
   }
   .header-nav {
     display: inline-block;
+    float: right;
   }
   .member-actions {
     position: absolute;
@@ -370,6 +383,9 @@ Intro
   display: inline-block;
   width: 80%;
 }
+.intro-feature {
+  min-height: 160px;
+}
 
 /* ==========================================================================
 Features-stack
@@ -399,6 +415,10 @@ Features-stack
   .feature-content {
     display: inline-block;
     width: 75%;
+    svg {
+      @include size(95px 13px);
+      * { fill: $txt-primary; }
+    }
   }
   .intro-icon {
     display: inline-block;
@@ -441,6 +461,11 @@ Features-stack
     position: absolute;
     bottom: -365px;
     right: 61%;
+  }
+  .feature-list {
+    & > h3 svg {
+      @include size(160px 21px);
+    }
   }
 }
 .features .responsive-feature-img, .features-extra .responsive-feature-img {

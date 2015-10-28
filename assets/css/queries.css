@@ -9,10 +9,6 @@
 		width: 70%;
 	}
 
-	.hero .hero-content {
-		padding-top: 28%;
-	}
-
 }
 
 @media screen and (max-width:1024px) {
@@ -23,10 +19,6 @@
 	header {
 		width: 90%;
 		padding-left: 25px;
-	}
-
-	.hero .hero-content {
-		padding-top: 32%;
 	}
 
 	.header-nav {
@@ -182,6 +174,11 @@
 		transition-delay: 0.30s
 	}
 
+	.hero {
+		min-height: 670px;
+		background-size: 100%;
+	}
+
 	.intro-content {
 		display: inline-block;
 		width: 75%;
@@ -259,6 +256,10 @@
 	}
 
 	@media screen and (max-width:480px) {
+		.hero {
+			background-size: 120%;
+		}
+
 		.hero .hero-content {
 			padding-top: 41%;
 		}

@@ -7,7 +7,6 @@ $serif: Merriweather, Georgia, 'Times New Roman', serif;
 $accent-font: 'Nunito', sans-serif;
 
 // Weights
-
 $light: 300;
 $normal: 400;
 $semibold: 500;
@@ -37,6 +36,7 @@ $base-line-height: 29px;
 /* ==========================================================================
 Typography
 ========================================================================== */
+p,h1,h2,h3,h4,h5,span,input,button,label,a { @include antialias; }
 p {
 	font-size: $font-size-p;
 	line-height: $base-line-height;
