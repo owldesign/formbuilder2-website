@@ -1,4 +1,5 @@
-// Colours partial
+// FormBuilder
+$c-teal: #47c5ca;
 
 // Text colours
 $txt-primary: rgba(28, 54, 83, 0.6);
@@ -11,7 +12,7 @@ $txt-accent: #ACB1B4;
 $form-placeholder: #BCC1C3;
 // form placeholder text
 // Global colours
-$accent-color: #FF5274;
+$accent-color: $c-teal;
 // global accent colour
 $accent-color-hover: #D7405D;
 // global accent colour hover
