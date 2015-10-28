@@ -1,0 +1,29 @@
+{
+  "name": "formbuilder2",
+  "homepage": "https://github.com/owldesign/formbuilder2-website",
+  "authors": [
+    "Vadim Goncharov <vadim@owl-design.net>"
+  ],
+  "description": "Landing page for FormBuilder2 Craft CMS Plugin",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "craft cms plugin",
+    "formbuilder",
+    "craft cms"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "~3.4.0",
+    "classie": "~1.0.1",
+    "waypoints": "jquery-waypoints#~4.0.0",
+    "retina.js": "~1.3.0"
+  }
+}
